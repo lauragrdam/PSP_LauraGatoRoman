@@ -19,9 +19,11 @@ public class Ejercicio3 {
 		try {
 			p = rt.exec(comando);
 			
+			//Recogemos el flujo de caracteres y lo convertimos con InputStreamReader
 			InputStream is = p.getInputStream();
 			BufferedReader br = new BufferedReader(new InputStreamReader(is));
 			
+			//Aquí creamos el  archivo donde guardar la salida del comando
 			try (BufferedWriter filtroEscritura = new BufferedWriter(new FileWriter("ficheros.txt"))){
 				
 				String linea;
