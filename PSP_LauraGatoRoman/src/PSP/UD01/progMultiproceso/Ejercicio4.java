@@ -6,7 +6,7 @@ public class Ejercicio4 {
 		
 		Runtime rt = Runtime.getRuntime();
 		Process p = null;
-		String comando = "CMD /C DIR";
+		String comando = "CMD /C DIRRRRR";
 		int error = 0;
 		
 		try {
